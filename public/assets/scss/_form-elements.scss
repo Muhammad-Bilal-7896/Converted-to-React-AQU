@@ -1,0 +1,191 @@
+/* ==============
+  Form-elements
+===================*/
+
+label {
+  font-weight: 500;
+  font-family: $font-secondary;
+  font-size: 14px;
+}
+
+input[type="color"] {
+  min-height: 38px;
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+  color: lighten($lightdark7,20%) !important;
+}
+
+input:-moz-placeholder,textarea:-moz-placeholder {
+  color: lighten($lightdark7,20%) !important;
+}
+input::-moz-placeholder,textarea::-moz-placeholder {
+  color: lighten($lightdark7,20%) !important;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+  color: lighten($lightdark7,20%) !important;
+}
+
+
+.form-control {
+  font-family: $font-primary; @extend .medium-font;
+
+  &:focus {
+    border-color: darken($light,30%);
+    box-shadow: none;
+  }
+}
+
+.custom-control-input:checked~.custom-control-indicator {
+  background-color: $primary;
+}
+
+.custom-control-input:focus~.custom-control-indicator {
+  -webkit-box-shadow: 0 0 0 1px $white, 0 0 0 3px $primary;
+  box-shadow: 0 0 0 1px $white, 0 0 0 3px $primary;
+}
+
+.has-success {
+  .form-control {
+    border-color: $primary;
+    box-shadow: none;
+  }
+}
+
+.has-warning {
+  .form-control {
+    border-color: $warning;
+    box-shadow: none;
+  }
+}
+
+.has-error {
+  .form-control {
+    border-color: $danger;
+    box-shadow: none;
+  }
+}
+
+.input-group-addon {
+  border-radius: 2px;
+  border: 1px solid $light;
+}
+
+.input-holder{ border: 1px solid $baliHai; @extend .defaultRadius;}
+
+.btn{ display: flex; align-items: center; justify-content: center;}
+
+.form-group{ margin-bottom: 22px;
+  label{ font-size: 19px; @extend .semiBold; padding: 0; 
+    &.option2{ display: flex; align-items: flex-end; height: 46.6px;}
+  }
+  p{ font-size: 16px; @extend .medium;}
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .form-group{ 
+    label{ 
+      &.option2{ height: auto;}
+    }
+  }
+}
+.form-control{ padding: 15px ​30px; 
+  &:focus{ background-color: transparent!important; box-shadow: none!important; outline: none;}
+  &.optionBox{  padding: 15px ​30px!important; }
+}
+
+form{
+  label{ margin-bottom: .25rem; font-size: 19px; display: inline-block;}
+  .has_error{ background: rgba($ceriseRed, 0.1); color: $tundora;
+    .form-control{ background-color: transparent; padding-left: 0px!important;}
+    a{ color: $tundora!important;}
+    .icon-holder{ border-right: 0px!important; height: 38px!important;}
+  }
+
+  &.general-form{
+    .input-holder{ border: 0px}
+    .form-group{ @extend .mb--30;}
+    label{ @extend .basic-font; @extend .medium;}
+    select{ appearance: none; position: relative; display: flex;
+      &.form-control{ position: relative;
+        &.md{ height: 50px}
+      }
+      &::-ms-expand { display: none; }
+      &:after{ content: ' '; background: url(../images/svg/select-dropdown-arrow.svg) no-repeat; width: 25px; height: 25px; display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1em;
+        background-color: #34495e;
+        transition: .25s all ease;
+        pointer-events: none;}
+    }
+    .form-control{ @extend .medium-font; @extend .semiBold; border: 0px; padding: 15px!important; border: 1px solid $baliHai; @extend .defaultRadius;
+      &.md{ padding: 12px 15px!important;}
+      &:focus{ box-shadow: 0 0 0 .2rem rgba($pictonBlue,.25)!important; border-color: $pictonBlue;}
+    }
+    .search-holder{  position: relative;
+      .form-control{ padding-right: 50px!important;}
+      .icon{ background: url(../images/svg/search-icon.svg) no-repeat; width: 24px; height: 24px; cursor: pointer; display: block; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); }
+    }
+  }
+}
+
+select.form-control:not([size]):not([multiple]){ height: auto;}
+.input-group{
+  .input-group-prepend{
+    .dropdown-toggle-split{ border-top-right-radius: $borderRadius; border-bottom-right-radius:$borderRadius; position: relative;
+      &:before{ content: ""; width: 1px; height: 18px; background: darken($success, 5%); top: 50%; transform: translateY(-50%); display: block; position: absolute; left: 0px; }
+    }
+  }
+}
+
+
+// select
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background: url(../images/svg/select-dropdown-arrow.svg) no-repeat calc(100% - 10px) center; 
+  transition: .25s all ease;
+  pointer-events: none; height: 100%;
+}
+/* Transition */
+.select:hover::after {
+  
+}
+
+
+// tags
+.tags{
+  .tag{ border-radius: 100px; @extend .pl--15; @extend .pr--15; display: flex; align-items: center; justify-content: center; @extend .medium; @extend .float-left; background-color: $linkWater;
+    img{ vertical-align: initial; cursor: pointer; position: relative; top: 2px; @extend .ml--10;}
+    &.md{ height: 50px; @extend .medium-font }
+  }
+}

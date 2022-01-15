@@ -1,0 +1,174 @@
+
+@font-face {
+    font-family: 'hellixthin';
+    src: url('../fonts/hellix-thin.woff2') format('woff2'),
+         url('../fonts/hellix-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hellixlight';
+    src: url('../fonts/hellix-light.woff2') format('woff2'),
+         url('../fonts/hellix-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hellixblack';
+    src: url('../fonts/hellix-black.woff2') format('woff2'),
+         url('../fonts/hellix-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hellixregular';
+    src: url('../fonts/hellix-regular.woff2') format('woff2'),
+         url('../fonts/hellix-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hellixmedium';
+    src: url('../fonts/hellix-medium.woff2') format('woff2'),
+         url('../fonts/hellix-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hellixsemibold';
+    src: url('../fonts/hellix-semibold.woff2') format('woff2'),
+         url('../fonts/hellix-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hellixbold';
+    src: url('../fonts/hellix-bold.woff2') format('woff2'),
+         url('../fonts/hellix-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// Color variables
+$white: #ffffff;
+
+$basefontcolor: #32404E;
+$basebgcolor: #26333F;
+$lightnew:#FEF8FD;
+$primarynew: #28A8E0;
+$warningnew:#DF9B5C;
+$bodybg:#F8F9FE;
+$darknew: #4F4F50;
+$darkernew: #26333F;
+
+$porschecolor: #DF9B5C;
+$malibucolor: #5CB0DF;
+$mediumpurplecolor: #8678DF;
+$contessacolor: #C8776C;
+$wisteriacolor: #D485D6;
+$montecarlocolor: #76CBAC;
+$zigguratcolor: #8BA7AB;
+$horizon: #5F87AC;
+
+$primary: #6362bb;
+$secondary: #477083;
+// $success: #28D3AB;
+$success: #42C294;
+$info: #00bdff;
+$warning: #ffbb44;
+$warningdark: #E08028;
+$danger: #e84848;
+$dark: #3c4959;
+$muted: #707070;
+
+
+$pink: #f06292;
+$purple: #8938d5;
+$brown: #8d6e63;
+$blue-grey: #90a4ae;
+
+$lightdark5: #555555;
+$lightgray: #dddddd;
+$light: #eeeeee;
+$lightdark3: #333333;
+$lightdark4: #444444;
+$light5: #f5f5f5;
+$light3: #f3f3f3;
+$light9: #f9f9f9;
+$light-alt: #fafafa;
+$lightdark7: #797979;
+$lightdark-alt: #cccccc;
+
+$fiord: #3A4C65;
+$baliHai: #89A0AD;
+$ghost: #C3C9D4;
+$ceriseRed: #D82771;
+$tundora: #444;
+$whiteLilac: #ECF0F8; 
+$linkWater: #F7F9FD;
+$lynch: #73829F;
+$aliceBlue: #F3F9FF;
+
+$bg-body: #f2f5f7;
+$top-bar: #26333F;
+
+$pictonBlue: #47A1F4;
+$primarynew: $pictonBlue;
+
+$font-primary: 'Jost', sans-serif;
+$font-secondary: 'Jost', sans-serif;
+
+$box-shadow: 3px 8px 5px rgba(29, 30, 58, 0.03);
+
+
+// Width variables
+$width: 100%;
+
+
+// Height variables
+$height: 100%;
+
+// Default font size
+$basic-font: 14px;
+
+
+// Default font size
+$small-font: 12px;
+.small-font{ font-size: 12px;}
+$basic-font: 14px;
+.basic-font{ font-size: $basic-font!important;}
+$medium-font: 16px;
+.medium-font{ font-size: $medium-font!important;}
+$large-font: 18px;
+.large-font{ font-size: $large-font!important;}
+$xlarge-font: 20px;
+.xlarge-font{ font-size: $xlarge-font!important;}
+$xlarge2-font: 24px;
+.xlarge2-font{ font-size: $xlarge2-font!important;}
+$xxl-font: 32px;
+.xxl-font{ font-size: $xxl-font!important; line-height: 1.09;}
+
+$box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.1);
+
+$borderRadius: 6px;
+.defaultRadius{ border-radius: $borderRadius;}
+
+$font-primary: 'hellixregular';
+$font-secondary: 'hellixregular';
+
+.light{ font-family: 'hellixlight'; font-weight: normal;}
+.normal{ font-family: 'hellixregular'; font-weight: normal;}
+.medium{ font-family: 'hellixmedium'; font-weight: normal;}
+.semiBold{ font-family: 'hellixsemibold'; font-weight: normal;}
+.bold{ font-family: 'hellixbold'; font-weight: normal;}
+
+
+
