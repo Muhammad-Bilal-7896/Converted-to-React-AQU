@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+
 const Sidebar = () => {
+
+    useEffect(() => {
+        console.clear();
+        console.log("Path .... =========> " + window.location.pathname);
+    })
+
     return (
         <>
             {/* ========== Left Sidebar Start ========== */}

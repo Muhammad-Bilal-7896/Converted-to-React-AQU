@@ -7,6 +7,7 @@ const AssignTray = () => {
     return (
         <>
             <NavBar />
+           
             {/* Begin page */}
             <div id="wrapper">
                 <Sidebar />
